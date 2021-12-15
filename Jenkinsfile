@@ -27,5 +27,18 @@ pipeline {
                 }
             }
         }
+        stage("jenkins-dev") {
+            environment {
+                NAME = "test-image-${new Random().nextInt(123456789)}"
+            }
+            steps {
+                sh 'docker build -f jenkins-dev/Dockerfile -t $NAME .'
+            }
+            post {
+                always {
+                    sh 'docker rmi -f $NAME'
+                }
+            }
+        }
     }
 }
