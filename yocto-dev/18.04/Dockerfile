@@ -1,3 +1,6 @@
+# Copyright (c) 2020 LG Electronics Inc.
+# SPDX-License-Identifier: MIT
+
 FROM ubuntu:18.04
 
 MAINTAINER Sung Gon Kim <sunggon82.kim@lge.com>
