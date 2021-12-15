@@ -66,5 +66,18 @@ pipeline {
                 }
             }
         }
+        stage("clang-dev-9") {
+            environment {
+                NAME = "test-image-${new Random().nextInt(123456789)}"
+            }
+            steps {
+                sh 'docker build -f clang-dev/9/Dockerfile -t $NAME .'
+            }
+            post {
+                always {
+                    sh 'docker rmi -f $NAME'
+                }
+            }
+        }
     }
 }
