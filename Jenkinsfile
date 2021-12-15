@@ -40,5 +40,18 @@ pipeline {
                 }
             }
         }
+        stage("ubuntu-dev") {
+            environment {
+                NAME = "test-image-${new Random().nextInt(123456789)}"
+            }
+            steps {
+                sh 'docker build -f ubuntu-dev/Dockerfile -t $NAME .'
+            }
+            post {
+                always {
+                    sh 'docker rmi -f $NAME'
+                }
+            }
+        }
     }
 }
