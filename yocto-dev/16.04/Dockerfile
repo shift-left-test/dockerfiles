@@ -1,7 +1,7 @@
 # Copyright (c) 2021 LG Electronics Inc.
 # SPDX-License-Identifier: MIT
 
-FROM ubuntu:18.04
+FROM ubuntu:16.04
 
 MAINTAINER Sung Gon Kim <sunggon82.kim@lge.com>
 
@@ -16,7 +16,13 @@ RUN rm -f /etc/dpkg/dpkg.cfg.d/excludes && \
     apt-get update && \
     apt-get -y install software-properties-common && \
     add-apt-repository -y ppa:git-core/ppa && \
+    add-apt-repository -y ppa:deadsnakes/ppa && \
     apt-get update && \
+    apt-get -y install \
+    python3 \
+    python3.6 && \
+    update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 2 && \
+    update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.5 1 && \
     apt-get -y install \
     man-db \
     manpages-dev \
@@ -43,7 +49,6 @@ RUN rm -f /etc/dpkg/dpkg.cfg.d/excludes && \
     pylint3 \
     python \
     python-pip \
-    python3 \
     python3-git \
     python3-jinja2 \
     python3-pexpect \
@@ -89,7 +94,7 @@ USER ${user}
 
 ENV USER=${user}
 ENV LANG=en_US.UTF-8
-env GIT_SSL_NO_VERIFY=true
+ENV GIT_SSL_NO_VERIFY=true
 
 WORKDIR /home/${user}
 
