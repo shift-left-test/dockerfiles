@@ -1,0 +1,776 @@
+Open Source Software Package:
+- name : ack-grep
+  source : https://packages.ubuntu.com/bionic/ack-grep
+  license : Artistic-2.0
+  copyright : 2005-2013, Andy Lester <andy@petdance.com>
+- name : build-essential
+  source : https://packages.ubuntu.com/bionic/build-essential
+  license : GPL-2.0-or-later
+  copyright : |
+   Copyright (C) 2003-2005 Scott James Remnant <scott@netsplit.com>
+   Copyright (C) 2003 Colin Walters <walters@debian.org>
+   Copyright (C) 1999-2002 Antti-Juhani Kaijanaho <ajk@debian.org>
+   Copyright (C) 2006-2016 Matthas Klose <doko@debian.org>
+- name : chrpath
+  source : https://packages.ubuntu.com/bionic/chrpath
+  license : GPL-3.0-or-later
+  copyright : Petter Reinholdtsen <pere@hungry.com>
+- name : clang
+  source : https://packages.ubuntu.com/bionic/clang
+  license : GPL-2.0-or-later
+  copyright : Copyright (C) 2010 Debian.
+- name : clang-tidy
+  source : https://packages.ubuntu.com/bionic/clang-tidy
+  license : GPL-2.0-or-later
+  copyright : opyright (C) 2010 Debian.
+- name : cmake
+  source : https://packages.ubuntu.com/bionic/cmake
+  license : BSD-3-Clause
+  copyright : 2000-2011 Kitware, Inc., Insight Software Consortium
+- name : cpio
+  source : https://packages.ubuntu.com/bionic/cpio
+  license : GPL-3.0-or-later
+  copyright : Copyright (C) 1990, 1991, 1992, 2001, 2003, 2004, 2005, 2006, 2007 Free Software Foundation, Inc.
+- name : curl
+  source : https://packages.ubuntu.com/bionic/curl
+  license : curl
+  copyright : 1996-2015, Daniel Stenberg <daniel@haxx.se>
+- name : debianutils
+  source : https://packages.ubuntu.com/bionic/debianutils
+  license : GPL-2.0-or-later
+  copyright : |
+   Copyright (C)  1988 Landon Curt Noll & Ronald S. Karr
+   Copyright (C)  1992 Ronald S. Karr
+- name : default-jdk
+  source : https://packages.ubuntu.com/bionic/default-jdk
+  license : GPL-2.0-or-later
+  copyright : |
+   2000, Stephane Bortzmeyer <bortzmeyer@debian.org>
+   2001-2003, Ola Lundqvist <opal@debian.org>
+   2003, Stefan Gybas <sgybas@debian.org>
+   2005, Arnaud Vandyck <avdyk@debian.org>
+   2006-2008, Michael Koch <konqueror@gmx.de>
+   2006-2016, Matthias Klose <doko@debian.org>
+   2009, Torsten Werner <twerner@debian.org>
+   2010, Niels Thykier <niels@thykier.net>
+   2011-2013, Sylvestre Ledru <sylvestre@debian.org>
+   2014-2017, Emmanuel Bourg <ebourg@apache.org>
+- name : diffstat
+  source : https://packages.ubuntu.com/bionic/diffstat
+  license : MIT
+  copyright : Thomas E. Dickey <dickey@invisible-island.net>
+- name : dos2unix
+  source : https://packages.ubuntu.com/bionic/dos2unix
+  license : BSD-2-Clause
+  copyright : |
+   2009-2011 Erwin Waterlander <waterlan@xs4all.nl>,
+   1998 Christian Wurll <wurll@ira.uka.de>
+   1988 Bernd Johannes Wuebben <wuebben@kde.org>
+   1989, 1994, 1995 Benjamin Lin <blin@socs.uts.edu.au>
+- name : doxygen
+  source : https://packages.ubuntu.com/bionic/doxygen
+  license : GPL-2.0-only
+  copyright : 1997-2014, Dimitri van Heesch and others
+- name : emac
+  source : https://packages.ubuntu.com/bionic/emacs
+  license : GPL-3.0-or-later
+  copyright : Copyright (C) Robert Browning, 2012
+- name : emacs-nox
+  source : https://packages.ubuntu.com/bionic/emacs-nox
+  license : GPL-3.0-or-later
+  copyright : Copyright (C) Robert Browning, 2012
+- name : gawk
+  source : https://packages.ubuntu.com/bionic/gawk
+  license : GPL-3.0-or-later
+  copyright : 1986-2014, Free Software Foundation, Inc.
+- name : gcc-multilib
+  source : https://packages.ubuntu.com/bionic/gcc-multilib
+  license : GPL-2.0-or-later
+  copyright : Copyright (C) 2000, 2001, 2006, 2009 Debian.
+- name : gdb
+  source : https://packages.ubuntu.com/bionic/gdb
+  license : GPL-3.0-or-later
+  copyright : 1984-2014, Free Software Foundation, Inc
+- name : git-core
+  source : https://packages.ubuntu.com/bionic/git
+  license : GPL-2.0-only
+  copyright : (C) 2005-2018, Linus Torvalds and others.
+- name : global
+  source : https://packages.ubuntu.com/bionic/global
+  license : GPL-3.0-or-later
+  copyright : 1996-2014 Tama Communications Corporation
+- name : g++-multilib
+  source : https://packages.ubuntu.com/bionic/g++-multilib
+  license : GPL-2.0-or-later
+  copyright : Copyright (C) 2000, 2001, 2006, 2009 Debian.
+- name : graphviz
+  source : https://packages.ubuntu.com/bionic/graphviz
+  license : EPL-1.0
+  copyright : |
+   Copyright (C) John Ellson  <john.ellson@comcast.net>,
+   Copyright (C) Emden Gansner <erg@research.att.com>,
+   Copyright (C) Yifan Hu <yifanhu@research.att.com>,
+   Copyright (C) Stephen North <north@research.att.com>
+- name : htop
+  source : https://packages.ubuntu.com/bionic/htop
+  license : GPL-2.0-or-later
+  copyright : 2004-2018 Hisham Muhammad
+- name : iputils-ping
+  source : https://packages.ubuntu.com/bionic/iputils-ping
+  license : 
+  - BSD-3-Clause
+  - GPL-2.0-or-later
+  copyright : |
+   Copyright (c) 1989 The Regents of the University of California.
+   copyright Alexey Kuznetsov
+- name : libclang-10-dev
+  source : https://packages.ubuntu.com/bionic/libclang-10-dev
+  license : Apache-2.0 WITH LLVM-exception
+  copyright : 2003-2017 University of Illinois at Urbana-Champaign.
+- name : libclang-9-dev
+  source : https://packages.ubuntu.com/bionic/libclang-9-dev
+  license : Apache-2.0 WITH LLVM-exception
+  copyright : 2003-2017 University of Illinois at Urbana-Champaign.
+- name : libdbus-glib-1-2
+  source : https://packages.ubuntu.com/bionic/libdbus-glib-1-2
+  license : 
+  - GPL-2.0-or-later
+  - AFL-2.1
+  copyright : |
+   (C) 2002-2010 Red Hat, Inc
+   (C) 2002-2003 CodeFactory AB
+   (C) 2004 Ximian, Inc
+   (C) 2005-2011 Nokia Corporation
+   (C) 2006 Steve Frécinaux
+   (C) 2007 Codethink Ltd
+   (C) 2009-2014 Collabora Ltd
+   (C) 2013 Intel Corporation
+- name : libegl1-mesa
+  source : https://packages.ubuntu.com/bionic/libegl1-mesa
+  license : MIT
+  copyright : |
+   2005 Aapo Tahkola
+   2011 Adam Rak <adam.rak@streamnovation.com>
+   2014 Adrián Arroyo Calle <adrian.arroyocalle@gmail.com>
+   2010-2018 Advanced Micro Devices, Inc.
+   2002-2012 Apple Inc.
+   2009 Artur Wyszynski <harakash@gmail.com>
+   2000-2001 ATI Technologies Inc.
+   2015-2016 Axel Davy <axel.davy@ens.fr>
+   1988-2004 Bart Massey
+   2016 Bas Nieuwenhuizen
+   2011 Benjamin Franzke
+   2005-2008 Ben Skeggs
+   2015 Boyan Ding
+   1999-2016 Brian Paul
+   2014-2018 Broadcom
+   2011 Bryan Cain
+   2007 Carl Worth
+   2009-2011 Chia-I Wu <olvaffe@gmail.com>
+   2016 Christian Gmeiner <christian.gmeiner@gmail.com>
+   2010-2014 Christian König
+   2010-2012 Christoph Bumiller
+   2014-2017 Connor Abbott
+   2008-2010 Corbin Simpson
+   1999-2016 Dave Airlie
+   2008 Dennis Smit
+   2012-2017 Etnaviv Project
+   2003 Felix Kuehling
+   2009-2016 Francisco Jerez
+   2008-2010 George Sapountzis <gsapountzis@gmail.com>
+   2017 Gert Wollny
+   2013-2017 Google, Inc.
+   2017 Grazvydas Ignotas
+   2013 Gregory Hainaut <gregory.hainaut@gmail.com>
+   2002 Greg Parker
+   2013 Grigori Goronzy <greg@chown.ath.cx>
+   2008-2013 Haiku, Inc.
+   2002-2006 IBM Corporation
+   2011-2017 Ilia Mirkin
+   2006-2018 Intel Corporation
+   2007-2012 Jakob Bornecrantz
+   2017 Jason Ekstrand
+   2008-2010 Jerome Glisse <glisse@freedesktop.org>
+   2009-2013 Joakim Sindholt <opensource@zhasha.com>
+   2007 Joe Perches <joe@perches.com>
+   2006 John Maddock
+   2014-2017 Jon Turney
+   2008-2009 Jose Fonseca
+   1988-2017 Keith Packard
+   1997 Keith Whitwell
+   2011 Lauri Kasanen
+   2010 Luca Barbieri
+   2010-2013 LunarG, Inc.
+   2011-2013 Maarten Lankhorst
+   2008-2010 Maciej Cencora <m.cencora@gmail.com>
+   2010-2014 Marek Olšák <maraeo@gmail.com>
+   2011 Morgan Armand <morgan.devel@gmail.com>
+   2016 Nayan Deshmukh
+   2004-2009 Nicolai Haehnle <nhaehnle@gmail.com>
+   2007-2013 Nouveau Project
+   2012-2018 NVIDIA Corporation
+   2010 Orasanu Lucian
+   2015-2016 Patrick Rudolph <siro@das-labor.org>
+   2009 Pauli Nieminen
+   2006-2008 Philippe Houdoin
+   2015 Philip Taylor <philip@zaynar.co.uk>
+   1998-1999 Precision Insight, Inc.
+   2007-2018 Red Hat, Inc.
+   2018 Rhys Perry
+   2012-2018 Rob Clark <robclark@freedesktop.org>
+   2004 Roland Scheidegger
+   2015 Samuel Pitoiset
+   1991-2000 Silicon Graphics, Inc.
+   2018 Stefan Schake <stschake@gmail.com>
+   2003-2005 Stefan Gustavson
+   2008 Steven G. Johnson
+   2016 Steven Toth <stoth@kernellabs.com>
+   2011-2014 The Chromium OS authors
+   2007-2013 The Nouveau Project
+   2001-2004 The SCons Foundation
+   2002 The Weather Channel, Inc.
+   2006 Thierry Reding <thierry@gilfi.de>
+   2010 Thomas Balling Sörensen
+   2015-2017 Thomas Helland
+   1995 Thorsten Ohl
+   2013-2018 Timothy Arceri
+   2002 Todd C. Miller <Todd.Miller@courtesan.com>
+   2010-2014 Tom Stellard <tstellar@gmail.com>
+   2004 Torrey T. Lyons
+   2003-2008 Tungsten Graphics, Inc.
+   2012-2013 Vadim Girlin <vadimgirlin@gmail.com>
+   2000 VA Linux Systems Inc.
+   2015-2018 Valve Corporation
+   1998-2017 VMware, Inc.
+   1992 Vrije Universiteit, The Netherlands
+   1999 Wittawat Yamwong
+   2005 Zack Rusin
+- name : libgbm-dev
+  source : https://packages.ubuntu.com/bionic/libgbm-dev
+  license : MIT
+  copyright : |
+   2005 Aapo Tahkola
+   2011 Adam Rak <adam.rak@streamnovation.com>
+   2014 Adrián Arroyo Calle <adrian.arroyocalle@gmail.com>
+   2010-2018 Advanced Micro Devices, Inc.
+   2002-2012 Apple Inc.
+   2009 Artur Wyszynski <harakash@gmail.com>
+   2000-2001 ATI Technologies Inc.
+   2015-2016 Axel Davy <axel.davy@ens.fr>
+   1988-2004 Bart Massey
+   2016 Bas Nieuwenhuizen
+   2011 Benjamin Franzke
+   2005-2008 Ben Skeggs
+   2015 Boyan Ding
+   1999-2016 Brian Paul
+   2014-2018 Broadcom
+   2011 Bryan Cain
+   2007 Carl Worth
+   2009-2011 Chia-I Wu <olvaffe@gmail.com>
+   2016 Christian Gmeiner <christian.gmeiner@gmail.com>
+   2010-2014 Christian König
+   2010-2012 Christoph Bumiller
+   2014-2017 Connor Abbott
+   2008-2010 Corbin Simpson
+   1999-2016 Dave Airlie
+   2008 Dennis Smit
+   2012-2017 Etnaviv Project
+   2003 Felix Kuehling
+   2009-2016 Francisco Jerez
+   2008-2010 George Sapountzis <gsapountzis@gmail.com>
+   2017 Gert Wollny
+   2013-2017 Google, Inc.
+   2017 Grazvydas Ignotas
+   2013 Gregory Hainaut <gregory.hainaut@gmail.com>
+   2002 Greg Parker
+   2013 Grigori Goronzy <greg@chown.ath.cx>
+   2008-2013 Haiku, Inc.
+   2002-2006 IBM Corporation
+   2011-2017 Ilia Mirkin
+   2006-2018 Intel Corporation
+   2007-2012 Jakob Bornecrantz
+   2017 Jason Ekstrand
+   2008-2010 Jerome Glisse <glisse@freedesktop.org>
+   2009-2013 Joakim Sindholt <opensource@zhasha.com>
+   2007 Joe Perches <joe@perches.com>
+   2006 John Maddock
+   2014-2017 Jon Turney
+   2008-2009 Jose Fonseca
+   1988-2017 Keith Packard
+   1997 Keith Whitwell
+   2011 Lauri Kasanen
+   2010 Luca Barbieri
+   2010-2013 LunarG, Inc.
+   2011-2013 Maarten Lankhorst
+   2008-2010 Maciej Cencora <m.cencora@gmail.com>
+   2010-2014 Marek Olšák <maraeo@gmail.com>
+   2011 Morgan Armand <morgan.devel@gmail.com>
+   2016 Nayan Deshmukh
+   2004-2009 Nicolai Haehnle <nhaehnle@gmail.com>
+   2007-2013 Nouveau Project
+   2012-2018 NVIDIA Corporation
+   2010 Orasanu Lucian
+   2015-2016 Patrick Rudolph <siro@das-labor.org>
+   2009 Pauli Nieminen
+   2006-2008 Philippe Houdoin
+   2015 Philip Taylor <philip@zaynar.co.uk>
+   1998-1999 Precision Insight, Inc.
+   2007-2018 Red Hat, Inc.
+   2018 Rhys Perry
+   2012-2018 Rob Clark <robclark@freedesktop.org>
+   2004 Roland Scheidegger
+   2015 Samuel Pitoiset
+   1991-2000 Silicon Graphics, Inc.
+   2018 Stefan Schake <stschake@gmail.com>
+   2003-2005 Stefan Gustavson
+   2008 Steven G. Johnson
+   2016 Steven Toth <stoth@kernellabs.com>
+   2011-2014 The Chromium OS authors
+   2007-2013 The Nouveau Project
+   2001-2004 The SCons Foundation
+   2002 The Weather Channel, Inc.
+   2006 Thierry Reding <thierry@gilfi.de>
+   2010 Thomas Balling Sörensen
+   2015-2017 Thomas Helland
+   1995 Thorsten Ohl
+   2013-2018 Timothy Arceri
+   2002 Todd C. Miller <Todd.Miller@courtesan.com>
+   2010-2014 Tom Stellard <tstellar@gmail.com>
+   2004 Torrey T. Lyons
+   2003-2008 Tungsten Graphics, Inc.
+   2012-2013 Vadim Girlin <vadimgirlin@gmail.com>
+   2000 VA Linux Systems Inc.
+   2015-2018 Valve Corporation
+   1998-2017 VMware, Inc.
+   1992 Vrije Universiteit, The Netherlands
+   1999 Wittawat Yamwong
+   2005 Zack Rusin
+- name : libgit2-dev
+  source : https://packages.ubuntu.com/bionic/libgit2-dev
+  license : LicenseRef-GPL-2.0-with-linking-exception
+  copyright : 2009-2012, the libgit2 contributors
+- name : libgtk-3-0
+  source : https://packages.ubuntu.com/bionic/libgtk-3-0
+  license : LGPL-2.0-or-later
+  copyright : |
+   Copyright (C) 1986, 1987, 1998  The Open Group
+   Copyright (C) 1993 Robert Nation
+   Copyright (C) 1997-2010 The GTK+ Team
+   Copyright (C) 1991-1993, 1995, 1999-2010 Free Software Foundation, Inc.
+   Copyright (C) 1995, 1996, 1997, 1998 Steffen Beyer
+   Copyright (C) 1996-2007, 2009 Sun Microsystems, Inc.
+   Copyright (C) 1998 David Abilleira Freijeiro <odaf@nexo.es>
+   Copyright (C) 1998 Lars Hamann and Stefan Jeske
+   Copyright (C) 1998 Cesar Miquel and Shawn T. Amundson
+   Copyright (C) 1995-2007 Peter Mattis, Spencer Kimball and Josh MacDonald
+   Copyright (C) 1995-2007 Ryan Lortie
+   Copyright (C) 1998, 2002 Owen Taylor
+   Copyright (C) 1998 Elliot Lee
+   Copyright (C) 1998 Shawn T. Amundson
+   Copyright (C) 1998-2004 Tor Lillqvist
+   Copyright (C) 1998-2001, 2005, 2006 Tim Janik
+   Copyright (C) 1998-2007, 2010 Red Hat, Inc.
+   Copyright (C) 1998 Stanislav Brabec <utx@k332.feld.cvut.cz>
+   Copyright (C) 1998 Ji힂챠 Pavlovsk첵 <pavlovsk@ff.cuni.cz>
+   Copyright (C) 1999 Mark Crichton, Larry Ewing
+   Copyright (C) 1999 Michael Zucchi
+   Copyright (C) 2000 Keith Packard
+   Copyright (C) 2000 SuSE Linux Ltd
+   Copyright (C) 2001 CodeFactory AB
+   Copyright (C) 2001 Havoc Pennington
+   Copyright (C) 2001 Stefan Ondrejicka
+   Copyright (C) 2001 Archaeopteryx Software Inc.
+   Copyright (C) 2001-2005 Hans Breuer
+   Copyright (C) 2001,2002,2004 Anders Carlsson <andersca@gnu.org>
+   Copyright (C) 2001-2003, 2006, 2007, 2009, 2010 Kristian Rietveld <kris@gtk.org>
+   Copyright (C) 2002 Sayed Jaffer Al-Mosawi <mosawi@arabeyes.org>
+   Copyright (C) 2002 Naba Kumar <kh_naba@users.sourceforge.net>
+   Copyright (C) 2002 James Henstridge <james@daa.com.au>
+   Copyright (C) 2003, 2004 Raymond Penners <raymond@dotsphinx.com>
+   Copyright (C) 2003, 2004 Dom Lachowicz <cinamod@hotmail.com>
+   Copyright (C) 2003, 2004 Soeren Sandmann <sandmann@daimi.au.dk>
+   Copyright (C) 2003, 2004, 2006, 2009 Matthias Clasen <mclasen@redhat.com>
+   Copyright (C) 2003 Takuro Ashie
+   Copyright (C) 2003-2004 Kazuki IWAMOTO
+   Copyright (C) 2003 Apple Computer, Inc.
+   Copyright (C) 2003 Ricardo Fernandez Pascual
+   Copyright (C) 2003 Alex Graveley
+   Copyright (C) 2004 Paolo Borelli
+   Copyright (C) 2004, 2009, 2010 Nokia Corporation
+   Copyright (C) 2004-2006 Christian Hammond
+   Copyright (C) 2004 Lorenzo Gil Sanchez
+   Copyright (c) 2004 James M. Cape <jcape@ignore-your.tv>
+   Copyright (C) 2004-2009 GNOME Foundation
+   Copyright (C) 2005 Paolo Maggi
+   Copyright (C) 2005 Jamie McCracken <jamiemcc@gnome.org>
+   Copyright (C) 2005 Ronald S. Bultje
+   Copyright (C) 2005-2007 Vincent Untz
+   Copyright (C) 2005,2007-2009 Carlos Garnacho <carlosg@gnome.org>
+   Copyright (C) 2005-2008 Imendio AB
+   Copyright (C) 2005 Novell, Inc.
+   Copyright (C) 2005-2007 Emmanuele Bassi
+   Copyright (C) 2006 Alexander Larsson <alexl@redhat.com>
+   Copyright (C) 2006 John (J5) Palmieri <johnp@redhat.com>
+   Copyright (C) 2006-2008, 2010 Christian Persch
+   Copyright (C) 2006,2008 Jan Arne Petersen
+   Copyright (C) 2006 Hong Jen Yee (PCMan) <pcman.tw@gmail.com>
+   Copyright (C) 2006-2007 Async Open Source
+   Copyright (C) 2006-2010 Openismus GmbH
+   Copyright (C) 2007 John Stowers, Neil Jagdish Patel
+   Copyright (C) 2007-2009 Cody Russell
+   Copyright (C) 2008 Tristan Van Berkom <tristan.van.berkom@gmail.com>
+   Copyright (C) 2008 Tadej Borov큄ak <tadeboro@gmail.com>
+   Copyright (C) 2008 Jaap Haitsma <jaap@haitsma.org>
+   Copyright (C) 2008 Richard Hughes <richard@hughsie.com>
+   Copyright (C) 2009 Bastien Nocera
+   Copyright (C) 2009 Stefan Walter <stef@memberwebs.com>
+   Copyright (C) 2009 Ghee Teo <ghee.teo@sun.com>
+   Copyright (C) 2010 Codethink Limited
+   Copyright (C) 2010 Christian Dywan
+   Copyright (C) 2010 Xandru Armesto <xandru@softastur.org>
+   Copyright (C) 2010 Damyan Ivanov <dam+gnome@ktnx.net>
+   Copyright (C) 2010 Sadia Afroz <sadia@ankur.org.bd>
+   Copyright (C) 2010 Israt Jahan <israt@ankur.org.bd>
+   Copyright (C) Federico Mena
+   Copyright (C) Christian Kellner <gicmo@gnome.org>
+   Copyright (C) David Zeuthen <davidz@redhat.com>
+   Copyright (C) Javier Jard처n <jjardon@gnome.org>
+- name : liblz4-tool
+  source : https://packages.ubuntu.com/bionic/liblz4-tool
+  license : BSD-2-Clause
+  copyright : Copyright (C) 2011-2015, Yann Collet.
+- name : libncurses5-dev
+  source : https://packages.ubuntu.com/bionic/libncurses5-dev
+  license : MIT
+  copyright : Copyright (c) 1998-2017,2018 Free Software Foundation, Inc.
+- name : libsdl1.2-dev
+  source : https://packages.ubuntu.com/bionic/libsdl1.2-dev
+  license : LGPL-2.1-or-later
+  copyright : |
+   1997-2012, Sam Lantinga <slouken@libsdl.org>
+   2002, Stephane Marchesin <stephane.marchesin@wanadoo.fr>
+- name : libxkbcommon0
+  source : https://packages.ubuntu.com/bionic/libxkbcommon0
+  license : MIT
+  copyright : |
+   Copyright 1985, 1987, 1988, 1990, 1998  The Open Group
+   Copyright 2008, 2009  Dan Nicholson
+   Copyright (c) 1993, 1994, 1995, 1996 by Silicon Graphics Computer Systems, Inc.
+   Copyright 1987, 1988 by Digital Equipment Corporation, Maynard, Massachusetts.
+- name : llvm-10-dev
+  source : https://packages.ubuntu.com/bionic/llvm-10-dev
+  license : Apache-2.0 WITH LLVM-exception
+  copyright : 2003-2017 University of Illinois at Urbana-Champaign.
+- name : llvm-9-dev
+  source : https://packages.ubuntu.com/bionic/llvm-9-dev
+  license : Apache-2.0 WITH LLVM-exception
+  copyright : 2003-2017 University of Illinois at Urbana-Champaign.
+- name : locales
+  source : https://packages.ubuntu.com/bionic/locales
+  license : LGPL-2.1-or-later
+  copyright : Copyright (C) 1991-2015 Free Software Foundation, Inc.
+- name : man-db
+  source : https://packages.ubuntu.com/bionic/man-db
+  license : GPL-2.0-or-later
+  copyright : |
+   1990, 1991 John W. Eaton
+   1994, 1995 Markus Armbruster
+   1994, 1995 Graeme W. Wilford (Wilf.)
+   1995 Carl Edman
+   1996-1998, 2000 Fabrizio Polacco
+   2001-2012 Colin Watson
+   1984, 1989-1992, 1995-2012 Free Software Foundation, Inc.
+- name : manpages-dev
+  source : https://packages.ubuntu.com/bionic/manpages-dev
+  license : GPL-2.0-or-later
+  copyright : (C) 2005-2017 Michael Kerrisk
+- name : manpages-posix
+  source : https://packages.ubuntu.com/bionic/manpages-posix
+  license : LicenseRef-posix-license
+  copyright : (C) 2013 by the Institute of Electrical and Electronics Engineers, Inc and The Open Group
+- name : maven
+  source : https://packages.ubuntu.com/bionic/maven
+  license : Apache-2.0
+  copyright : |
+   2001-2017, The Apache Software Foundation
+   2001-2006, The Codehaus Foundation
+- name : pep8
+  source : https://packages.ubuntu.com/bionic/pep8
+  license : MIT
+  copyright : Copyright (C) 2006 Johann C. Rocholl
+- name : pylint3
+  source : https://packages.ubuntu.com/bionic/pylint3
+  license : GPL-2.0-or-later
+  copyright : Copyright (c) 2003-2017, Logilab, PyCQA and contributors
+- name : python3
+  source : https://packages.ubuntu.com/bionic/python3
+  license : Python-2.0
+  copyright : Copyright © 2001-2021 Python Software Foundation. All rights reserved.
+- name : python3-git
+  source : https://packages.ubuntu.com/bionic/python3-git
+  license : BSD-3-Clause
+  copyright : |
+   2008-2011 Michael Trier <mtrier@gmail.com>
+   2008-2011 Florian Apolloner <florian@apolloner.eu>
+   2008-2011 David Aguilar <davvid@gmail.com>
+   2008-2011 Alan Briolat
+- name : python3-jinja2
+  source : https://packages.ubuntu.com/bionic/python3-jinja2
+  license : BSD-3-Clause
+  copyright : Copyright (c) 2009-2011 by the Jinja Team
+- name : python3-pexpect
+  source : https://packages.ubuntu.com/bionic/python3-pexpect
+  license : ISC
+  copyright : |
+   Copyright (c) 2006-2013 Noah Spurrier
+   Copyright (c) 2013-2014 Pexpect development team
+- name : python-pip
+  source : https://packages.ubuntu.com/bionic/python-pip
+  license : MIT
+  copyright : |
+   Copyright (C) 2008-2013 The pip developers:
+   Alex Grönholm
+   Alex Morega
+   Alexandre Conrad
+   Andrey Bulgakov
+   Antti Kaihola
+   Armin Ronacher
+   Aziz Köksal
+   Ben Rosser
+   Brian Rosner
+   Carl Meyer
+   Chris McDonough
+   Christian Oudard
+   Clay McClure
+   Cody Soyland
+   Daniel Holth
+   Dave Abrahams
+   David (d1b)
+   Dmitry Gladkov
+   Donald Stufft
+   Francesco
+   Geoffrey Lehée
+   Georgi Valkov
+   Hugo Lopes Tavares
+   Ian Bicking
+   Igor Sobreira
+   Ionel Maries Cristian
+   Jakub Vysoky
+   James Cleveland
+   Jannis Leidel
+   Jay Graves
+   John-Scott Atlakson
+   Jon Parise
+   Jonas Nockert
+   Josh Bronson
+   Kamal Bin Mustafa
+   Kelsey Hightower
+   Kenneth Belitzky
+   Kumar McMillan
+   Luke Macken
+   Masklinn
+   Marc Abramowitz
+   Marcus Smith
+   Markus Hametner
+   Matt Maker
+   Maxime R.
+   Miguel Araujo
+   Nick Stenning
+   Nowell Strite
+   Oliver Tonnhofer
+   Olivier Girardot
+   Patrick Jenkins
+   Paul Moore
+   Paul Nasrat
+   Paul Oswald
+   Paul van der Linden
+   Peter Waller
+   Phil Whelan
+   Piet Delport
+   Przemek Wrzos
+   Qiangning Hong
+   Rafael Caricio
+   Rene Dudfield
+   Roey Berman
+   Ronny Pfannschmidt
+   Rory McCann
+   Simon Cross
+   Stavros Korokithakis
+   Thomas Fenzl
+   Thomas Johansson
+   Vinay Sajip
+   Vitaly Babiy
+   W Trevor King
+   Wil Tan
+   Hsiaoming Yang
+- name : rsync
+  source : https://packages.ubuntu.com/bionic/rsync
+  license : GPL-3.0-or-later
+  copyright : Copyright (C) 1996-2011 by Andrew Tridgell, Wayne Davison, and others.
+- name : screen
+  source : https://packages.ubuntu.com/bionic/screen
+  license : GPL-3.0-or-later
+  copyright : |
+   1987      Oliver Laumann
+   1991      Wayne Davidson
+   1993-2006 Juergen Weigert <jnweiger@immd4.informatik.uni-erlangen.de>
+   1993-2006 Michael Schroeder <mlschroe@immd4.informatik.uni-erlangen.de>
+- name : socat
+  source : https://packages.ubuntu.com/bionic/socat
+  license : GPL-2.0-or-later
+  copyright : Copyright (C) 2001-2010 Gerhard Rieger
+- name : software-properties-common
+  source : https://packages.ubuntu.com/bionic/software-properties-common
+  license : GPL-2.0-or-later
+  copyright : |
+   2004-2007 Canonical Ltd.
+   2004-2005 Michiel Sikkes
+   2006 FSF Europe
+- name : sudo
+  source : https://packages.ubuntu.com/bionic/sudo
+  license : ISC
+  copyright : Copyright (c) 1994-1996, 1998-2008 Todd C. Miller <Todd.Miller@courtesan.com>
+- name : texinfo
+  source : https://packages.ubuntu.com/bionic/texinfo
+  license : GPL-3.0-or-later
+  copyright : Copyright (C) 1987, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012 Free Software Foundation, Inc.
+- name : tig
+  source : https://packages.ubuntu.com/bionic/tig
+  license : GPL-3.0-or-later
+  copyright : |
+   Damian Pietras <daper@daper.net>
+   Drew Northup <n1xim.email@gmail.com>
+   Free Software Foundation, Inc.
+   John Zaitseff <J.Zaitseff@zap.org.au>
+   Jonas Fonseca <fonseca@diku.dk>
+   Mark Pulford <mark@kyne.com.au>
+   Mike Frysinger <vapier@gentoo.org>
+   Reuben Thomas <rrt@sc3d.org>
+   Thomas E. Dickey
+- name : tmux
+  source : https://packages.ubuntu.com/bionic/tmux
+  license : ISC
+  copyright : |
+   Copyright (c) 2007-2010 Nicholas Marriott <nicm@users.sourceforge.net> on
+    everything not listed thereunder
+   Copyright (c) 2009 Joshua Elsasser <josh@elsasser.org> on
+    attributes.c
+    osdep-darwin.c
+   Copyright (c) 2008-2009 Tiago Cunha <me@tiagocunha.org> on
+    cmd-confirm-before.c
+    cmd-copy-buffer.c
+    cmd-display-message.c
+    cmd-if-shell.c
+    cmd-load-buffer.c
+    cmd-save-buffer.c
+    cmd-source-file.c
+    examples/tmux.vim
+   Copyright (c) 2002 Todd C. Miller <Todd.Miller@courtesan.com> on
+    getopt_long.c
+   Copyright (c) 2004, 2005, 2007 Darren Tucker (dtucker at zip com au) on
+    bsd-poll.c
+   Copyright (c) 1998 Todd C. Miller <Todd.Miller@courtesan.com> on
+    strlcat.c
+   Copyright (c) 1998 Todd C. Miller <Todd.Miller@courtesan.com> on
+    strlcpy.c
+   Copyright (c) 2004 Ted Unangst and Todd Miller on
+    strtonum.c
+   Copyright (c) 2010 Romain Francoise <rfrancoise@debian.org> on
+    signal.c
+- name : tox
+  source : https://packages.ubuntu.com/bionic/tox
+  license : GPL-2.0-or-later
+  copyright : 2011 Holger Kregel <holger@merlinux.eu>
+- name : unzip
+  source : https://packages.ubuntu.com/bionic/unzip
+  license : Info-ZIP
+  copyright : Copyright (c) 1990-2009 Info-ZIP.  All rights reserved.
+- name : vim
+  source : https://packages.ubuntu.com/bionic/vim
+  license : Vim
+  copyright : |
+   2001-2017 Bram Moolenaar <Bram@vim.org>
+   2006 Benji Fisher <benji@member.ams.org>
+   1999-2016 Charles E. Campbell, Jr. <drchip@campbellfamily.biz>
+   2003 Fred Barnes
+   2003 Mario Schweigler
+   2004-2008 Michael Geddes
+   2006 Martin Krischik
+   2015 Christian Brabandt
+   2014 David Necas (Yeti)
+   2009-2013 Steven Oliver
+   2012 Hong Xu
+   2001-2016 MURAOKA Taro <koron.kaoriya@gmail.com>
+   2001 Bohdan Vlasyuk <bohdan@vstu.edu.ua>
+   2003-2017 Ernest Adrogué <eadrogue@gmx.net>
+   2005,2006,2008,2010 Kevin Patrick Scannell <kscanne@gmail.com>
+   1997 Olaf Seibert
+   1997 Heiko Erhardt
+   2002 E. I. DuPont de Nemours and Company, Inc
+   Pablo Ariel Kohan
+   2017 Eugene Ciurana
+- name : wget
+  source : https://packages.ubuntu.com/bionic/wget
+  license : GPL-3.0-or-later
+  copyright : Copyright: (C) 2007 Free Software Foundation, Inc.
+- name : xterm
+  source : https://packages.ubuntu.com/bionic/xterm
+  license : MIT
+  copyright : |
+   Copyright 1997-2017 by Thomas E. Dickey
+   Copyright 1999-2000 by Steve Wall
+   Copyright 2013,2014 by Ross Combs
+- name : xz-utils
+  source : https://packages.ubuntu.com/bionic/xz-utils
+  license :
+  - LGPL-2.1-or-later
+  - GPL-2.0-or-later
+  - GPL-3.0-or-later
+  copyright : |
+   2006-2012, Lasse Collin
+   1999-2008, Igor Pavlov
+   2006, Ville Koskinen
+   1998, Steve Reid
+   2000, Wei Dai
+   2003, Kevin Springle
+   2009, Jonathan Nieder
+   2010, Anders F Björklund
+- name : zstd
+  source : https://packages.ubuntu.com/bionic/zstd
+  license : BSD-3-Clause
+  copyright : |
+   2013-2016, Yann Collet
+   2016, Przemyslaw Skibinski
+   2016, Facebook, Inc.
+- name : pytest
+  source : https://pypi.org/project/pytest/
+  license : MIT
+  copyright : Copyright Holger Krekel and others, 2004-2021.
+- name : cpplint
+  source : https://pypi.org/project/cpplint/
+  license : BSD-3-Clause
+  copyright : Copyright (C) 2009 Google Inc.
+- name : gcovr
+  source : https://pypi.org/project/gcovr/
+  license : BSD-3-Clause
+  copyright : |
+   Copyright 2013-2021 the gcovr authors
+   Copyright 2013 Sandia Corporation. Under the terms of Contract DE-AC04-94AL85000 with Sandia Corporation, the U.S. Government retains certain rights in this software.
+- name : requests
+  source : https://pypi.org/project/requests/
+  license : Apache-2.0
+  copyright : Copyright 2020 Kenneth Reitz
+- name : cppcheck 
+  source : https://github.com/danmar/cppcheck/
+  license : GPL-3.0-or-later
+  copyright : Copyright (C) 2007-2021 Cppcheck team.
+- name : Duplo
+  source : https://github.com/dlidstrom/Duplo
+  license : GPL-2.0-or-later
+  copyright : |
+   Copyright (2005) Christian M. Ammann
+   Copyright (2006) Trevor D'Arcy-Evans
+- name : googletest
+  source : https://github.com/google/googletest
+  license : BSD-3-Clause
+  copyright : Copyright 2008, Google Inc.
