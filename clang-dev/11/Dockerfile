@@ -3,8 +3,6 @@
 
 FROM ubuntu:18.04
 
-MAINTAINER Sung Gon Kim <sunggon82.kim@lge.com>
-
 ARG DEBIAN_FRONTEND=noninteractive
 ARG user=jenkins
 ARG uid=124
@@ -12,33 +10,56 @@ ARG gid=128
 
 USER root
 
-RUN rm -f /etc/dpkg/dpkg.cfg.d/excludes && \
-    apt-get update && \
-    apt-get -y install software-properties-common && \
+# Install prerequisites
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends locales software-properties-common && \
+    locale-gen en_US.UTF-8 && \
     add-apt-repository -y ppa:git-core/ppa && \
+# Add apt-get repositories
     apt-get update && \
-    apt-get -y install \
-    man-db \
-    manpages-dev \
-    manpages-posix \
+    apt-get install -y --no-install-recommends \
+    gpg-agent wget && \
+    echo "deb http://apt.llvm.org/bionic/ llvm-toolchain-bionic-11 main" > /etc/apt/sources.list.d/llvm.list && \
+    echo "deb-src http://apt.llvm.org/bionic/ llvm-toolchain-bionic-11 main" >> /etc/apt/sources.list.d/llvm.list && \
+    wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | apt-key add - && \
+# Install packages
+    apt-get update && \
+    apt-get install -y --no-install-recommends \
     ack-grep \
     build-essential \
     chrpath \
+    clang \
+    clang-tidy \
+    cmake \
     cpio \
     curl \
     debianutils \
     diffstat \
+    dos2unix \
+    doxygen \
     emacs \
     emacs-nox \
-    gawk \
+    file \
     g++-multilib \
+    gawk \
     gcc-multilib \
+    gdb \
     git-core \
+    global \
+    googletest \
+    graphviz \
     htop \
     iputils-ping \
+    libclang-11-dev \
     libegl1-mesa \
+    libgit2-dev \
+    liblz4-tool \
+    libncurses5-dev \
     libsdl1.2-dev \
-    locales \
+    llvm-11-dev \
+    man-db \
+    manpages-dev \
+    manpages-posix \
     pep8 \
     pylint3 \
     python \
@@ -55,44 +76,23 @@ RUN rm -f /etc/dpkg/dpkg.cfg.d/excludes && \
     texinfo \
     tig \
     tmux \
+    tox \
     unzip \
     vim \
-    wget \
     xterm \
     xz-utils \
-    liblz4-tool \
-    zstd
-
-RUN echo "deb http://apt.llvm.org/bionic/ llvm-toolchain-bionic-11 main" > /etc/apt/sources.list.d/llvm.list && \
-    echo "deb-src http://apt.llvm.org/bionic/ llvm-toolchain-bionic-11 main" >> /etc/apt/sources.list.d/llvm.list && \
-    wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | sudo apt-key add -
-
-RUN apt-get update && \
-    apt-get -y install \
-    clang \
-    clang-tidy \
-    cmake \
-    dos2unix \
-    doxygen \
-    global \
-    googletest \
-    graphviz \
-    libclang-11-dev \
-    libgit2-dev \
-    libncurses5-dev \
-    llvm-11-dev \
-    tox
-
+    zstd && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/* && \
 # Install python tools
-RUN python3 -m pip install -U pip && \
+    python3 -m pip install -U pip && \
     python3 -m pip install -U \
     pytest \
     cpplint \
     gcovr \
-    requests
-
+    requests && \
 # Install cppcheck
-RUN mkdir cppcheck && \
+    mkdir cppcheck && \
     cd cppcheck && \
     wget https://github.com/danmar/cppcheck/archive/2.1.tar.gz && \
     tar xvf 2.1.tar.gz && \
@@ -100,10 +100,9 @@ RUN mkdir cppcheck && \
     make -j && \
     make install && \
     cd .. && \
-    rm -rf cppcheck
-
+    rm -rf cppcheck && \
 # Install googletest
-RUN mkdir googletest && \
+    mkdir googletest && \
     cd googletest && \
     cmake /usr/src/googletest && \
     make && \
@@ -111,32 +110,22 @@ RUN mkdir googletest && \
     cp googlemock/gtest/*.a /usr/lib && \
     cd .. && \
     rm -rf googletest && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
-
-# For ubuntu, do not use dash.
-RUN which dash &> /dev/null && (\
-    echo "dash dash/sh boolean false" | debconf-set-selections && \
-    DEBIAN_FRONTEND=noninteractive dpkg-reconfigure dash) || \
-    echo "Skipping dash reconfigure (not applicable)"
-
-# Configure
-RUN groupadd -g ${gid} ${user} && \
-    useradd -N -m -u ${uid} -g ${gid} ${user} && \
-    echo "${user} ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers && \
-    /usr/sbin/locale-gen en_US.UTF-8 && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
-
 # Set anonymous user name and email for git
-RUN git config --system user.email "anonymous@example.com" && \
-    git config --system user.name "anonymous"
+    git config --system user.email "anonymous@example.com" && \
+    git config --system user.name "anonymous" && \
+# For ubuntu, do not use dash.
+    echo "dash dash/sh boolean false" | debconf-set-selections && \
+    DEBIAN_FRONTEND=noninteractive dpkg-reconfigure dash && \
+# Create the user information
+    groupadd -g ${gid} ${user} && \
+    useradd -N -m -u ${uid} -g ${gid} ${user} && \
+    echo "${user} ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
 USER ${user}
 
 ENV USER=${user}
 ENV LANG=en_US.UTF-8
-env GIT_SSL_NO_VERIFY=true
+ENV GIT_SSL_NO_VERIFY=true
 
 WORKDIR /home/${user}
 

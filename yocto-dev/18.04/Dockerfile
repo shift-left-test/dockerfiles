@@ -3,8 +3,6 @@
 
 FROM ubuntu:18.04
 
-MAINTAINER Sung Gon Kim <sunggon82.kim@lge.com>
-
 ARG DEBIAN_FRONTEND=noninteractive
 ARG user=jenkins
 ARG uid=124
@@ -12,15 +10,15 @@ ARG gid=128
 
 USER root
 
-RUN rm -f /etc/dpkg/dpkg.cfg.d/excludes && \
+# Install prerequisites
+RUN apt-get clean && \
     apt-get update && \
-    apt-get -y install software-properties-common && \
+    apt-get install -y --no-install-recommends locales software-properties-common && \
+    locale-gen en_US.UTF-8 && \
     add-apt-repository -y ppa:git-core/ppa && \
+# Install packages
     apt-get update && \
-    apt-get -y install \
-    man-db \
-    manpages-dev \
-    manpages-posix \
+    apt-get install -y --no-install-recommends \
     ack-grep \
     build-essential \
     chrpath \
@@ -30,6 +28,7 @@ RUN rm -f /etc/dpkg/dpkg.cfg.d/excludes && \
     diffstat \
     emacs \
     emacs-nox \
+    file \
     gawk \
     g++-multilib \
     gcc-multilib \
@@ -37,8 +36,8 @@ RUN rm -f /etc/dpkg/dpkg.cfg.d/excludes && \
     htop \
     iputils-ping \
     libegl1-mesa \
+    liblz4-tool \
     libsdl1.2-dev \
-    locales \
     pep8 \
     pylint3 \
     python \
@@ -60,36 +59,31 @@ RUN rm -f /etc/dpkg/dpkg.cfg.d/excludes && \
     wget \
     xterm \
     xz-utils \
-    liblz4-tool \
-    zstd
-
-# Install python tools
-RUN python3 -m pip install --system \
-    pytest
-
-# For ubuntu, do not use dash.
-RUN which dash &> /dev/null && (\
-    echo "dash dash/sh boolean false" | debconf-set-selections && \
-    DEBIAN_FRONTEND=noninteractive dpkg-reconfigure dash) || \
-    echo "Skipping dash reconfigure (not applicable)"
-
-# Configure
-RUN groupadd -g ${gid} ${user} && \
-    useradd -N -m -u ${uid} -g ${gid} ${user} && \
-    echo "${user} ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers && \
-    /usr/sbin/locale-gen en_US.UTF-8 && \
+    zstd && \
     apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
-
-# Set anonymous user name and email for git
-RUN git config --system user.email "anonymous@example.com" && \
-    git config --system user.name "anonymous"
+    rm -rf /var/lib/apt/lists/* && \
+# Install python tools
+    python3 -m pip install --system \
+    pytest && \
+# Install the Android repo
+    curl https://storage.googleapis.com/git-repo-downloads/repo > /usr/bin/repo && \
+    chmod a+x /usr/bin/repo && \
+# For ubuntu, do not use dash.
+    echo "dash dash/sh boolean false" | debconf-set-selections && \
+    DEBIAN_FRONTEND=noninteractive dpkg-reconfigure dash && \
+# Set user name and email for git
+    git config --system user.email "anonymous@example.com" && \
+    git config --system user.name "anonymous" && \
+# Create the user information
+    groupadd -g ${gid} ${user} && \
+    useradd -N -m -u ${uid} -g ${gid} ${user} && \
+    echo "${user} ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
 USER ${user}
 
 ENV USER=${user}
 ENV LANG=en_US.UTF-8
-env GIT_SSL_NO_VERIFY=true
+ENV GIT_SSL_NO_VERIFY=true
 
 WORKDIR /home/${user}
 
