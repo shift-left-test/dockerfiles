@@ -16,14 +16,10 @@ RUN apt-get clean && \
     apt-get install -y --no-install-recommends locales software-properties-common && \
     locale-gen en_US.UTF-8 && \
     add-apt-repository -y ppa:git-core/ppa && \
-    add-apt-repository -y ppa:deadsnakes/ppa && \
 # Install python3
     apt-get update && \
     apt-get install -y --no-install-recommends \
-    python3 \
-    python3.6 && \
-    update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 2 && \
-    update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.5 1 && \
+    python3 && \
 # Install packages
     apt-get update && \
     apt-get install -y --no-install-recommends \
@@ -55,6 +51,7 @@ RUN apt-get clean && \
     python3-jinja2 \
     python3-pexpect \
     python3-pip \
+    python3-pytest \
     rsync \
     screen \
     socat \
@@ -70,9 +67,8 @@ RUN apt-get clean && \
     zstd && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
-# Install python tools
-    python3 -m pip install --system \
-    pytest && \
+# Create a hardlink to the pytest runner
+    ln /usr/bin/py.test-3 /usr/bin/pytest && \
 # Install the Android repo
     curl https://storage.googleapis.com/git-repo-downloads/repo > /usr/bin/repo && \
     chmod a+x /usr/bin/repo && \
