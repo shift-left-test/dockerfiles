@@ -56,6 +56,7 @@ RUN apt-get update && \
     liblz4-tool \
     libncurses5-dev \
     libsdl1.2-dev \
+    libzstd-dev \
     llvm-11-dev \
     man-db \
     manpages-dev \
